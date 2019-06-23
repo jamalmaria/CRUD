@@ -1,0 +1,50 @@
+body{
+    padding: 0;
+    margin: 0;
+    background-image: linear-gradient(rgb(178, 247, 187),rgb(131, 158, 233));
+}
+.box{
+    margin: 200px auto;
+    text-align: center;
+  
+}
+table{
+    border:1px solid black;
+    margin: 0 auto;
+}
+tr, td, th{
+    width: 200px;
+    border:1px solid black;
+    text-align: center;
+}
+.input{
+    /* display:inline !important; */
+    width: 535px !important;
+    margin: 0 auto;
+}
+#update{
+    display:none;
+}
+@media only screen and (max-width:990px) {
+    body{
+        display: none;
+    padding: 0;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    }
+}
+@media only screen and (max-width:479px) {
+    body{
+        display: none;
+/*         
+        padding: 0;
+        margin: 0;
+        background-repeat: no-repeat;
+        background-size: 200% 200%;
+        width: 100%;
+        height: 100%; */
+    }
+}

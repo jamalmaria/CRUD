@@ -1,0 +1,79 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>University Records</title>
+    <link rel="stylesheet" href="./Public/CSS/index.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+</head>
+<body>
+      <div class="main container">
+        <div class="box">
+            <div id="create">
+                <h1>Student Details</h1>
+                <br>
+                <form class="form"id="form" action="javascript:void(0);" method="POST" onsubmit="add()">
+                    <input  class="form-control input" type="text" required placeholder="Name" name="name" id="name">
+                    <input  class="form-control input" type="number" required placeholder="Contact No" name="contact" id="contact">
+                    <input  class="form-control input" type="email" required placeholder="E-mail" name="email" id="email">
+                    <input  class="form-control input" type="text" required placeholder="Qualification" name="qualification" id="qualification">
+                    <input  class="form-control input" type="number" required placeholder="Intake" name="intake" id="intake">
+                    <input  class="form-control input" type="text" required placeholder="Course" name="course" id="course"><br><br>
+                    <button class="btn btn-success">Submit</button>
+                </form><br></br>
+            
+            </div>
+            <div id="update">
+                <h1>Update Student Details</h1>
+                 <form class="updateForm"id="updateForm" action="javascript:void(0);" method="POST" >
+                    <input  class="form-control input" type="text" placeholder="Name" name="name" id="updateName">
+                    <input  class="form-control input" type="number" placeholder="Contact No" name="contact" id="updateContact">
+                    <input  class="form-control input" type="email" placeholder="E-mail" name="email" id="updateEmail">
+                    <input  class="form-control input" type="text" placeholder="Qualification" name="qualification" id="updateQualification">
+                     <input  class="form-control input" type="number" placeholder="Intake" name="intake" id="updateIntake">
+                    <input  class="form-control input" type="text" placeholder="Course" name="course" id="updateCourse">
+                    <br><br>
+                    <button class="btn btn-success">Update</button>
+                 </form><br></br>
+            </div>
+            <div class="container" style="text-align: center;">
+                 <table class="contactlist table" id="">
+                <thead class="thead-dark">
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">E-mail</th>
+                    <th scope="col">Qualification</th>  
+                    <th scope="col">Intake</th>  
+                    <th scope="col">Course</th>
+                    <th scope="col">Update</th>
+                    <th scope="col">Delete</th>
+                </tr>
+                </thead>
+                <tbody id="contactList">
+
+                </tbody>
+             </table>
+
+            </div>
+           
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <script src="./Public/JS/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
